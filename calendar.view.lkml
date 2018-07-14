@@ -17,7 +17,7 @@ view: calendar {
           + p9.n * POWER(2,9)
           + p10.n * POWER(2,10)
           )::int
-          , '2012-11-01'::date
+          , '2015-11-01'::date
           )
           as cal_date
         FROM
@@ -46,7 +46,7 @@ view: calendar {
           + p9.n * POWER(2,9)
           + p10.n * POWER(2,10)
           )::int
-          , '2012-11-01'::date
+          , '2015-11-01'::date
           ) <= current_date
        ;;
   }

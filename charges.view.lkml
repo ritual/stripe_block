@@ -51,6 +51,11 @@ view: charges {
     sql: ${TABLE}.failure_code ;;
   }
 
+  dimension: failure_message {
+    type: string
+    sql: ${TABLE}.failure_message ;;
+  }
+
   dimension: invoice_id {
     type: string
     # hidden: true
@@ -174,6 +179,7 @@ view: charges {
       paid,
       invoice_id,
       failure_code,
+      failure_message,
       received_time,
       created_time,
       customers.email
