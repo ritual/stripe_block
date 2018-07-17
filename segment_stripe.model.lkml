@@ -7,6 +7,7 @@ include: "*.view"
 include: "*.dashboard"
 
 explore: calendar {
+  hidden: yes
   label: "Charges"
 
   join: charges {
@@ -53,6 +54,7 @@ explore: calendar {
 }
 
 explore: customer {
+  hidden: yes
   from: calendar
   label: "Customers"
 
